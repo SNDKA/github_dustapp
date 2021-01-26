@@ -24,3 +24,20 @@
 마지막으로 화면에 연결 가능한 기기의 목록이 출력된 후, 화면에 해당 기기의 이름을 클릭하면 
 블루투스 연결 혹은 블루투스 연결 실패시 어플을 종료하는 작업을 합니다.
 ![블루투스 목록에서 연결](https://user-images.githubusercontent.com/78009291/105831095-a68a8480-6009-11eb-8984-9c5f9a089327.PNG)
+
+---
+#### 2. 아두이노에서 데이터를 가져와 화면에 출력하기
+
+블루투스 연결을 완료하면 블루투스 통신을 이용해 아두이노에서 측정한 미세먼지 데이터를 가져와 화면에 출력해야 합니다.
+저는 외부 라이브러리를 이용하여 실시간 그래프를 사용하여 화면에 표시 해봤습니다.
+
+먼저 bulid.gradle에 
+implementation 'com.mysugr.MPAndroidChart:MPAndroidChart:3.1.0-mysugr-1' 를 추가하고, 레이아웃에서 라인차트를 생성합니다.
+
+그 뒤에 클래스를 하나 생성해주고, 그 클래스에 차트라인에 대한 코딩을 합니다.
+![차트라인 1](https://user-images.githubusercontent.com/78009291/105833803-0e8e9a00-600d-11eb-9305-5a2f594b5334.PNG)
+![차트라인 2](https://user-images.githubusercontent.com/78009291/105833805-0f273080-600d-11eb-9359-205eda037185.PNG)
+
+그리고 데이터를 받아서 그래프에 그려질 선 들을 생성합니다.
+![차트에 들어갈 데이터](https://user-images.githubusercontent.com/78009291/105833808-0fbfc700-600d-11eb-9690-f7db8e9ba8ac.PNG)
+![차트에 들어갈 데이터 2](https://user-images.githubusercontent.com/78009291/105833806-0f273080-600d-11eb-99d8-0dbd5e7583f7.PNG)
