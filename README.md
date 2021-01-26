@@ -73,8 +73,9 @@ implementation 'com.mysugr.MPAndroidChart:MPAndroidChart:3.1.0-mysugr-1' 를 추
 ![xml 데이터 파싱 1](https://user-images.githubusercontent.com/78009291/105836943-4dbeea00-6011-11eb-84fa-a1802f39c916.PNG)
 
 그리고 데이터를 외부라이브러리 프로그래스바를 이용해서 수치를 나타냅니다.
-먼저 buile.gradle에 implementation 'com.dinuscxj:circleprogressbar:1.3.0'라이브러리를 추가하고,
+buile.gradle에 implementation 'com.dinuscxj:circleprogressbar:1.3.0'라이브러리를 추가하고
 레이아웃에서 프로그래스바를 만들어줍니다. 그 후에, 데이터를 프로그래스바에 넣어 출력해주고 파싱을 마무리 짓습니다.
+
 ![xml 데이터 파싱 2](https://user-images.githubusercontent.com/78009291/105838081-f4f05100-6012-11eb-8bf1-36281836957b.PNG)
 ![xml 데이터 파싱 3](https://user-images.githubusercontent.com/78009291/105838650-b7d88e80-6013-11eb-8fa0-0aaa16e75b3a.PNG)
 
