@@ -13,12 +13,15 @@
 아두이노와 안드로이드간의 통신을 위해서는 블루투스 연결을 필요로 합니다.
 하지만 아두이노에는 기본적으로 블루투스 통신을 위한 장치가 설치되어 있지않아 HC-06이라는 모듈을 사용해야 합니다.
 그 후, 안드로이드 스튜디오에서 bluetoothspp:1.0.0 라이브러리를 추가하고 manifast에 블루투스, 인터넷 권한을 추가합니다.
+
 ![권한](https://user-images.githubusercontent.com/78009291/105829019-2d8a2d80-6007-11eb-8770-6e274ba936a5.PNG)
 
 기본 설정을 완료하고 나면 블루투스 연결을 위한 버튼과 MainActivity 코딩을 시작합니다.
+
 <img src="https://user-images.githubusercontent.com/78009291/105829787-26afea80-6008-11eb-9876-52a3859d0cf0.PNG" width="600" height="600">
 
 그리고 버튼을 누르면 블루투스를 연결할 기기 목록을 출력합니다.
+
 ![블루투스 목록](https://user-images.githubusercontent.com/78009291/105830816-4abffb80-6009-11eb-810d-25def6a621e2.PNG)
 
 마지막으로 화면에 연결 가능한 기기의 목록이 출력된 후, 화면에 해당 기기의 이름을 클릭하면 
@@ -61,9 +64,11 @@ implementation 'com.mysugr.MPAndroidChart:MPAndroidChart:3.1.0-mysugr-1' 를 추
 이 코드는 text URL을 허용하라는 코드이며 HTTP 사용시 에러가 나지 않게 합니다.
 
 그리고 가져오고자 하는 데이터가 들어있는 주소를 입력합니다.
+
 ![데이터 가져오기](https://user-images.githubusercontent.com/78009291/105836948-4e578080-6011-11eb-875a-a3e3e19d8d9d.PNG)
 
 주소를 입력하고 AsyncTask를 이용하여 본격적으로 XML파싱을 시작합니다.
+
 ![AsyncTask](https://user-images.githubusercontent.com/78009291/105836939-4d265380-6011-11eb-9e36-4001b06510a9.PNG)
 ![xml 데이터 파싱 1](https://user-images.githubusercontent.com/78009291/105836943-4dbeea00-6011-11eb-84fa-a1802f39c916.PNG)
 
@@ -74,7 +79,16 @@ implementation 'com.mysugr.MPAndroidChart:MPAndroidChart:3.1.0-mysugr-1' 를 추
 ![xml 데이터 파싱 3](https://user-images.githubusercontent.com/78009291/105838650-b7d88e80-6013-11eb-8fa0-0aaa16e75b3a.PNG)
 
 프로그래스바도 마무리 짓습니다.
+
 ![프로그래스바](https://user-images.githubusercontent.com/78009291/105838560-95467580-6013-11eb-96fa-642f7f2f3cc5.PNG)
 
 
+-----
+#### 4. 실행화면
 
+코딩이 다 끝나고 나면 최종화면은 아래와 같이 나올 것 입니다.
+![실행화면](https://user-images.githubusercontent.com/78009291/105839344-ae9bf180-6014-11eb-84e9-56cde0af3712.jpg)
+
+그리고 코드를 작성하실 때 다른 지역의 측정소를 기준으로 하고 싶다면 URL을 해당 측정소의 URL로 변경해주시면 됩니다.
+측정소 이름도 stationName 코드를 통해서 받아오고 싶었지만, 코드들에 문제는 없는데 받아오질 못해서
+텍스트로 측정소 이름을 지정했습니다.
