@@ -23,6 +23,7 @@
 
 마지막으로 화면에 연결 가능한 기기의 목록이 출력된 후, 화면에 해당 기기의 이름을 클릭하면 
 블루투스 연결 혹은 블루투스 연결 실패시 어플을 종료하는 작업을 합니다.
+
 ![블루투스 목록에서 연결](https://user-images.githubusercontent.com/78009291/105831095-a68a8480-6009-11eb-8984-9c5f9a089327.PNG)
 
 ---
@@ -61,5 +62,19 @@ implementation 'com.mysugr.MPAndroidChart:MPAndroidChart:3.1.0-mysugr-1' 를 추
 
 그리고 가져오고자 하는 데이터가 들어있는 주소를 입력합니다.
 ![데이터 가져오기](https://user-images.githubusercontent.com/78009291/105836948-4e578080-6011-11eb-875a-a3e3e19d8d9d.PNG)
+
+주소를 입력하고 AsyncTask를 이용하여 본격적으로 XML파싱을 시작합니다.
+![AsyncTask](https://user-images.githubusercontent.com/78009291/105836939-4d265380-6011-11eb-9e36-4001b06510a9.PNG)
+![xml 데이터 파싱 1](https://user-images.githubusercontent.com/78009291/105836943-4dbeea00-6011-11eb-84fa-a1802f39c916.PNG)
+
+그리고 데이터를 외부라이브러리 프로그래스바를 이용해서 수치를 나타냅니다.
+먼저 buile.gradle에 implementation 'com.dinuscxj:circleprogressbar:1.3.0'라이브러리를 추가하고,
+레이아웃에서 프로그래스바를 만들어줍니다. 그 후에, 데이터를 프로그래스바에 넣어 출력해주고 파싱을 마무리 짓습니다.
+![xml 데이터 파싱 2](https://user-images.githubusercontent.com/78009291/105838081-f4f05100-6012-11eb-8bf1-36281836957b.PNG)
+![xml 데이터 파싱 3](https://user-images.githubusercontent.com/78009291/105838650-b7d88e80-6013-11eb-8fa0-0aaa16e75b3a.PNG)
+
+프로그래스바도 마무리 짓습니다.
+![프로그래스바](https://user-images.githubusercontent.com/78009291/105838560-95467580-6013-11eb-96fa-642f7f2f3cc5.PNG)
+
 
 
