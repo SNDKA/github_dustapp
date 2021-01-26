@@ -77,7 +77,8 @@ implementation 'com.mysugr.MPAndroidChart:MPAndroidChart:3.1.0-mysugr-1' 를 추
 주소를 입력하고 AsyncTask를 이용하여 본격적으로 XML파싱을 시작합니다.
 
 ![AsyncTask](https://user-images.githubusercontent.com/78009291/105836939-4d265380-6011-11eb-9e36-4001b06510a9.PNG)
-![xml 데이터 파싱 1](https://user-images.githubusercontent.com/78009291/105836943-4dbeea00-6011-11eb-84fa-a1802f39c916.PNG)
+![xml 데이터 파싱 1](https://user-images.githubusercontent.com/78009291/105843359-ef970480-601a-11eb-9a81-0e1861f1fee1.PNG)
+
 
 그리고 데이터를 외부라이브러리 프로그래스바를 이용해서 수치를 나타냅니다.
 buile.gradle에 implementation 'com.dinuscxj:circleprogressbar:1.3.0'라이브러리를 추가하고
