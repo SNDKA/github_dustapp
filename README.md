@@ -34,10 +34,26 @@
 먼저 bulid.gradle에 
 implementation 'com.mysugr.MPAndroidChart:MPAndroidChart:3.1.0-mysugr-1' 를 추가하고, 레이아웃에서 라인차트를 생성합니다.
 
-그 뒤에 클래스를 하나 생성해주고, 그 클래스에 차트라인에 대한 코딩을 합니다.
+그 뒤에 클래스를 하나 생성해주고, 그 클래스에 차트라인에 대한 코딩을 합니다. 저는 chartLine로 생성하였습니다.
 ![차트라인 1](https://user-images.githubusercontent.com/78009291/105833803-0e8e9a00-600d-11eb-9305-5a2f594b5334.PNG)
 ![차트라인 2](https://user-images.githubusercontent.com/78009291/105833805-0f273080-600d-11eb-9359-205eda037185.PNG)
 
 그리고 데이터를 받아서 그래프에 그려질 선 들을 생성합니다.
 ![차트에 들어갈 데이터](https://user-images.githubusercontent.com/78009291/105833808-0fbfc700-600d-11eb-9690-f7db8e9ba8ac.PNG)
 ![차트에 들어갈 데이터 2](https://user-images.githubusercontent.com/78009291/105833806-0f273080-600d-11eb-99d8-0dbd5e7583f7.PNG)
+
+이렇게 하면 chartLine에 대한 클래스는 끝이납니다.
+
+다시 MainActivity로 넘어와서 아두이노에서 데이터를 가져와서 그 값을 그래프에 그려주는 작업을 시작합니다.
+![데이터 가져오기](https://user-images.githubusercontent.com/78009291/105834959-83ae9f00-600e-11eb-8107-3cb78141a3d9.PNG)
+
+여기까지 완료하면 값을 가져와 그래프를 그리는 것 까지 끝났습니다.
+
+-----
+#### 3. 공공데이터포털에서 오픈API 데이터 파싱하기
+오픈API를 파싱하는 방법은 여러가지 언어로 가능하지만 저는 XML을 이용해서 데이터를 파싱하겠습니다.
+
+우선 manifast
+
+
+
