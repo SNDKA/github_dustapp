@@ -35,11 +35,14 @@
 implementation 'com.mysugr.MPAndroidChart:MPAndroidChart:3.1.0-mysugr-1' 를 추가하고, 레이아웃에서 라인차트를 생성합니다.
 
 그 뒤에 클래스를 하나 생성해주고, 그 클래스에 차트라인에 대한 코딩을 합니다. 저는 chartLine로 생성하였습니다.
+
 ![차트라인 1](https://user-images.githubusercontent.com/78009291/105833803-0e8e9a00-600d-11eb-9305-5a2f594b5334.PNG)
 ![차트라인 2](https://user-images.githubusercontent.com/78009291/105833805-0f273080-600d-11eb-9359-205eda037185.PNG)
 
 그리고 데이터를 받아서 그래프에 그려질 선 들을 생성합니다.
+
 ![차트에 들어갈 데이터](https://user-images.githubusercontent.com/78009291/105833808-0fbfc700-600d-11eb-9690-f7db8e9ba8ac.PNG)
+
 ![차트에 들어갈 데이터 2](https://user-images.githubusercontent.com/78009291/105833806-0f273080-600d-11eb-99d8-0dbd5e7583f7.PNG)
 
 이렇게 하면 chartLine에 대한 클래스는 끝이납니다.
@@ -56,6 +59,7 @@ implementation 'com.mysugr.MPAndroidChart:MPAndroidChart:3.1.0-mysugr-1' 를 추
 우선 manifests 안에 application 영역에 android:usesCleartextTraffic="true"를 추가합니다.
 이 코드는 text URL을 허용하라는 코드이며 HTTP 사용시 에러가 나지 않게 합니다.
 
-
+그리고 가져오고자 하는 데이터가 들어있는 주소를 입력합니다.
+![데이터 가져오기](https://user-images.githubusercontent.com/78009291/105836948-4e578080-6011-11eb-875a-a3e3e19d8d9d.PNG)
 
 
