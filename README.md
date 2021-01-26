@@ -53,7 +53,9 @@ implementation 'com.mysugr.MPAndroidChart:MPAndroidChart:3.1.0-mysugr-1' 를 추
 #### 3. 공공데이터포털에서 오픈API 데이터 파싱하기
 오픈API를 파싱하는 방법은 여러가지 언어로 가능하지만 저는 XML을 이용해서 데이터를 파싱하겠습니다.
 
-우선 manifast
+우선 manifests 안에 application 영역에 android:usesCleartextTraffic="true"를 추가합니다.
+이 코드는 text URL을 허용하라는 코드이며 HTTP 사용시 에러가 나지 않게 합니다.
+
 
 
 
